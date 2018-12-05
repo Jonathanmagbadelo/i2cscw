@@ -19,15 +19,17 @@ import static com.magbadelo.jonathan.i2cscw.Cipher.encrypt;
 public class CipherTest {
 
     @Parameters
-    public static Iterable<? extends Object> data() {
-        return IntStream.range(0, 100).mapToObj(num -> RandomStringUtils.randomAlphabetic((new Random().nextInt(100)) + 20)).collect(Collectors.toList());
+    public static Iterable<?> data() {
+        return IntStream.range(0, 100)
+                .mapToObj(num -> RandomStringUtils.randomAlphabetic((new Random().nextInt(100)) + 20))
+                .collect(Collectors.toList());
     }
 
     @Parameter
     public String plainText;
 
     @Test
-    public void tester() {
+    public void testCipher() {
         String key = RandomStringUtils.randomAlphabetic(plainText.length());
         plainText = plainText.toLowerCase();
 

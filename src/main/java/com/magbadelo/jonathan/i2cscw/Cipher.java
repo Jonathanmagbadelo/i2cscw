@@ -7,18 +7,23 @@ import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static java.util.Arrays.*;
-import static java.util.Collections.*;
-import static java.util.stream.Collectors.*;
+import static java.util.Arrays.asList;
+import static java.util.Collections.shuffle;
+import static java.util.Collections.swap;
+import static java.util.stream.Collectors.toList;
 
 public class Cipher {
     public static void main(String[] args) {
-        String plaintext = "sussexfriend";
+        String plaintext = args[0];
         String key = RandomStringUtils.randomAlphabetic(plaintext.length());
+
+        System.out.println("Running encryption for plaintext: " + plaintext);
         String cipherText = encrypt(plaintext, key);
+
+        System.out.println("The encrypted ciphertext is: " + cipherText);
+
         String decryptedText = decrypt(cipherText, key);
-        System.out.println(cipherText);
-        System.out.println(decryptedText);
+        System.out.println("The decrypted plaintext from the ciphertext is: " + decryptedText);
     }
 
     static String encrypt(String plainText, String key) {
