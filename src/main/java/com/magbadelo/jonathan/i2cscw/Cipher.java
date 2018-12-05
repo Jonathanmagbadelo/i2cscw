@@ -13,7 +13,7 @@ import static java.util.stream.Collectors.*;
 
 public class Cipher {
     public static void main(String[] args) {
-        String plaintext = "sussex friend";
+        String plaintext = "sussexfriend";
         String key = RandomStringUtils.randomAlphabetic(plaintext.length());
         String cipherText = encrypt(plaintext, key);
         String decryptedText = decrypt(cipherText, key);
@@ -21,44 +21,38 @@ public class Cipher {
         System.out.println(decryptedText);
     }
 
-    public static String encrypt(String plaintext, String key) {
-        String transposedText = transposition(plaintext, key);
+    static String encrypt(String plainText, String key) {
+        String transposedText = transposition(plainText, key);
         return IntStream.range(0, transposedText.length())
                 .mapToObj(index -> String.valueOf(
-                        (char) xor(
-                                vigenere(transposedText.codePointAt(index), key.codePointAt(index), true),
-                                key.codePointAt(index))))
+                        (char) vigenere(transposedText.codePointAt(index), key.codePointAt(index), true)))
                 .collect(Collectors.joining());
     }
 
-    public static String decrypt(String ciphertext, String key) {
-        String transposedText = IntStream.range(0, ciphertext.length())
+    static String decrypt(String cipherText, String key) {
+        String transposedText = IntStream.range(0, cipherText.length())
                 .mapToObj(index -> String.valueOf(
-                        (char) vigenere(
-                                xor(ciphertext.codePointAt(index), key.codePointAt(index)),
-                                key.codePointAt(index),
-                                false)))
+                        (char) vigenere(cipherText.codePointAt(index), key.codePointAt(index), false)))
                 .collect(Collectors.joining());
         return transposition(transposedText, key);
     }
 
     private static String transposition(String text, String key) {
         List<Integer> indexList = IntStream.range(0, text.length()).boxed().collect(toList());
+
         shuffle(indexList, new Random(key.hashCode()));
+
         List<String> textCharList = asList(text.split(""));
+
         for (int index = 0; index < textCharList.size() / 2; index++) {
             swap(textCharList, indexList.get(index), indexList.get(textCharList.size() - index - 1));
         }
-        return String.join("", textCharList);
-    }
 
-    private static int xor(int codePointOne, int codePointTwo) {
-        return codePointOne;
+        return String.join("", textCharList);
     }
 
     private static int vigenere(int codePointOne, int codePointTwo, boolean shouldEncrypt) {
         return shouldEncrypt ? ((codePointOne - 'a' + codePointTwo - 'a') % 26 + 'a') :
                 ('a' + (codePointOne - codePointTwo + 26) % 26);
     }
-
 }
