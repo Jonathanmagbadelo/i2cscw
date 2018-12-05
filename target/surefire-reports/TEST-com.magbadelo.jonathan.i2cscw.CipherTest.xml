@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.334" tests="100" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/akin/IdeaProjects/i2cscw/target/test-classes:/home/akin/IdeaProjects/i2cscw/target/classes:/home/akin/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/home/akin/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/akin/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/home/akin/IdeaProjects/i2cscw/target/surefire/surefirebooter6705979197225810957.jar /home/akin/IdeaProjects/i2cscw/target/surefire 2018-11-27T14-28-20_793-jvmRun1 surefire3994183865909016880tmp surefire_0680394601266560411tmp"/>
+    <property name="surefire.test.class.path" value="/home/akin/IdeaProjects/i2cscw/target/test-classes:/home/akin/IdeaProjects/i2cscw/target/classes:/home/akin/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/home/akin/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/akin/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/akin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="basedir" value="/home/akin/IdeaProjects/i2cscw"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/akin/IdeaProjects/i2cscw/target/surefire/surefirebooter6705979197225810957.jar"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_191-b12"/>
+    <property name="user.name" value="akin"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.15.0-39-generic"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/akin/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_191"/>
+    <property name="user.dir" value="/home/akin/IdeaProjects/i2cscw"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/local/cuda/lib64::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.191-b12"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="tester[0]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.004"/>
+  <testcase name="tester[1]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[2]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[3]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[4]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[5]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[6]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[7]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[8]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[9]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[10]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[11]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[12]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[13]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[14]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[15]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[16]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[17]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[18]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[19]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[20]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[21]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[22]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[23]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[24]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[25]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[26]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[27]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[28]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[29]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[30]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[31]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[32]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[33]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[34]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[35]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[36]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[37]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[38]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[39]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[40]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[41]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[42]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[43]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[44]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[45]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[46]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[47]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[48]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[49]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[50]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[51]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[52]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[53]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[54]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[55]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[56]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[57]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[58]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[59]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[60]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[61]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[62]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[63]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[64]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[65]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[66]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[67]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[68]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[69]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[70]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[71]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[72]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[73]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[74]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[75]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[76]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[77]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[78]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[79]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[80]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[81]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[82]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[83]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[84]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.128"/>
+  <testcase name="tester[85]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[86]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[87]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[88]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[89]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0.001"/>
+  <testcase name="tester[90]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[91]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[92]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[93]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[94]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[95]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[96]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[97]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[98]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+  <testcase name="tester[99]" classname="com.magbadelo.jonathan.i2cscw.CipherTest" time="0"/>
+</testsuite>
